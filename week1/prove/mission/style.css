@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #111;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 38px 24px;
+}
+
+.mission-card {
+    border: 1px solid #cfcfcf;
+    margin: 0 auto;
+    max-width: 706px;
+    min-height: 676px;
+    padding: 63px 121px 42px;
+}
+
+.mission-header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 31px;
+    letter-spacing: 2px;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+}
+
+.institution {
+    border-bottom: 1px solid #e2e2e2;
+    color: #006eb6;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 0;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.mission-content {
+    font-size: 15px;
+    line-height: 1.52;
+    margin-top: 35px;
+}
+
+.mission-content p {
+    margin: 0;
+}
+
+.mission-content .intro {
+    margin-top: 17px;
+}
+
+ol {
+    margin: 17px 0 0;
+    padding-left: 30px;
+}
+
+li {
+    padding-left: 1px;
+}
+
+li + li {
+    margin-top: 15px;
+}
+
+.mission-footer {
+    margin-top: 38px;
+    text-align: center;
+}
+
+.mission-footer img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    width: 100px;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@media (max-width: 620px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .mission-card {
+        min-height: 0;
+        padding: 42px 28px 36px;
+    }
+
+    h1 {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .institution {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}
