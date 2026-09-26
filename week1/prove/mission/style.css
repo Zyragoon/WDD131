@@ -9,14 +9,27 @@ body {
     margin: 0;
     min-height: 100vh;
     padding: 38px 24px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+body.dark-theme {
+    background-color: #171717;
+    color: #f5f5f5;
 }
 
 .mission-card {
+    background-color: #fff;
     border: 1px solid #cfcfcf;
     margin: 0 auto;
     max-width: 706px;
     min-height: 676px;
     padding: 63px 121px 42px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.dark-theme .mission-card {
+    background-color: #242424;
+    border-color: #555;
 }
 
 .mission-header {
@@ -40,6 +53,24 @@ h1 {
     margin: 0;
     padding-bottom: 3px;
     text-transform: uppercase;
+}
+
+.dark-theme .institution {
+    border-color: #555;
+    color: #75c8ff;
+}
+
+.theme-picker {
+    margin-top: 16px;
+}
+
+.theme-picker label {
+    margin-right: 6px;
+}
+
+.theme-picker select {
+    font: inherit;
+    padding: 3px 6px;
 }
 
 .mission-content {

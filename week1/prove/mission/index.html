@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Statement | Brigham Young University-Idaho</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main class="mission-card">
         <header class="mission-header">
             <h1>Mission Statement</h1>
             <p class="institution">Brigham Young University-Idaho</p>
+            <div class="theme-picker">
+                <label for="theme-select">Theme:</label>
+                <select id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
         </header>
 
         <section class="mission-content" aria-labelledby="mission-heading">
@@ -33,7 +41,7 @@
         </section>
 
         <footer class="mission-footer">
-            <img src="byui-logo-blue.webp" alt="Brigham Young University-Idaho logo">
+            <img id="byui-logo" src="byui-logo-blue.webp" alt="Brigham Young University-Idaho logo">
         </footer>
     </main>
 </body>
