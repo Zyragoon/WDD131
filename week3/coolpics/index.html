@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cool Pics</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <h1>Cool Pics 📷</h1>
       <nav aria-label="Main navigation">
-        <a class="menu-link" href="#gallery">Menu</a>
-        <div class="desktop-links">
+        <button class="menu-link" type="button" aria-expanded="false" aria-controls="site-links">
+          Menu
+        </button>
+        <div class="desktop-links" id="site-links">
           <a href="#">Home</a>
           <a href="#">People</a>
           <a href="#">Places</a>
@@ -34,6 +37,10 @@
         <img src="images/norris-sm.jpg" alt="A steaming geothermal pool beneath a blue sky" />
         <img src="images/norris-sm.jpg" alt="A steaming geothermal pool beneath a blue sky" />
       </section>
+      <dialog class="viewer" aria-label="Enlarged photo">
+        <button class="close-viewer" type="button" aria-label="Close enlarged photo">×</button>
+        <img class="viewer-image" alt="" />
+      </dialog>
     </main>
 
     <footer>©2025 Cool Pics</footer>

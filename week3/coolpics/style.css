@@ -40,10 +40,23 @@ body {
 
 .menu-link {
   display: inline-block;
+  border: 0;
+  padding: 4px 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
 }
 
 .desktop-links {
   display: none;
+}
+
+.desktop-links.open {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
 }
 
 main {
@@ -73,6 +86,46 @@ main h2 {
   object-fit: cover;
   border: 2px solid #fff;
   box-shadow: 0 2px 5px #555;
+  cursor: pointer;
+}
+
+.viewer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 56px 16px 24px;
+  border: 0;
+  background: rgb(0 0 0 / 90%);
+  color: #fff;
+}
+
+.viewer[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewer-image {
+  display: block;
+  max-width: min(100%, 1000px);
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 footer {
@@ -128,6 +181,11 @@ footer {
     justify-content: center;
     gap: 16px;
     font-size: 0.72rem;
+  }
+
+  .desktop-links.open {
+    flex-direction: row;
+    padding-top: 0;
   }
 
   main {
