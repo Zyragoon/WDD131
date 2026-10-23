@@ -1,118 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A responsive book blog review featuring The Midnight Library by Matt Haig."
-    />
-    <title>Page Turner | The Midnight Library</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A book review of Septimus Heap: Magyk for young readers.">
+  <title>Kids Read For Fun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
     <header class="site-header">
-      <div class="container header-inner">
-        <a href="#" class="brand" aria-label="Page Turner home">Page Turner</a>
-        <nav aria-label="Main navigation">
-          <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Favorites</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-      </div>
+      <h1>Kids Read For Fun</h1>
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#archive">Archive</a></li>
+          <li><a href="#search">Search</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="container page-content">
-      <article class="book-article" aria-labelledby="article-title">
-        <header class="article-header">
-          <p class="eyebrow">Book Review</p>
-          <h1 id="article-title">The Midnight Library</h1>
-          <div class="meta-row" aria-label="Book details">
-            <span>By Matt Haig</span>
-            <span>Fiction | 2020</span>
-            <span>★★★★★</span>
-          </div>
-        </header>
+    <main>
+      <article class="book-review">
+        <aside class="book-meta" aria-label="Book details">
+          <p>July 5, 2022</p>
+          <p>10-14</p>
+          <p>Fantasy</p>
+          <p class="rating" aria-label="4 out of 5 stars">★★★★☆</p>
+        </aside>
 
-        <div class="book-hero">
-          <figure class="book-cover">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
-              alt="The Midnight Library by Matt Haig book cover"
-            />
-          </figure>
-
-          <div class="book-summary">
-            <p>
-              In a quiet library between life and death, Nora Seed discovers a place where
-              every decision she never made leads to a different version of her life. This
-              thoughtful, imaginative novel invites readers to consider the power of choice,
-              regret, and second chances.
-            </p>
-            <ul class="quick-facts" aria-label="Book quick facts">
-              <li><strong>Genre:</strong> Fiction</li>
-              <li><strong>Reading level:</strong> Adult</li>
-              <li><strong>Style:</strong> Emotional, reflective, hopeful</li>
-            </ul>
-          </div>
+        <div class="review-content">
+          <h2>Septimus Heap Book One: Magyk</h2>
+          <img
+            class="book-cover"
+            src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+            alt="Cover of Magyk by Angie Sage"
+          >
+          <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
         </div>
-
-        <section class="review-body" aria-label="Review text">
-          <h2>Why this book stays with you</h2>
-          <p>
-            Matt Haig blends science fiction, philosophy, and emotional storytelling into a
-            novel that feels both intimate and universal. Nora’s journey is more than a fantasy
-            exercise—it examines the quiet grief of what could have been and the courage it takes
-            to live fully in the present.
-          </p>
-          <p>
-            The Midnight Library is especially strong when it explores everyday sadness and the
-            everyday choices that shape a life. The pacing is accessible and the emotional stakes
-            are clear, so readers can move quickly through the story while still lingering on its
-            deeper themes.
-          </p>
-          <p>
-            What makes this story memorable is its tenderness. It is hopeful without being shallow,
-            and it respects the complexity of human pain instead of reducing it to simple answers.
-            For readers who enjoy reflective fiction with a touch of wonder, this is a satisfying,
-            heart-centered novel.
-          </p>
-        </section>
       </article>
-
-      <aside class="sidebar" aria-label="Additional reading information">
-        <section class="sidebar-card">
-          <h2>About the author</h2>
-          <p>
-            Matt Haig is a British author known for blending accessible storytelling with big
-            emotional ideas. His novels often explore identity, hope, and resilience in a way that
-            feels both personal and universal.
-          </p>
-        </section>
-
-        <section class="sidebar-card">
-          <h2>Why read it</h2>
-          <ul>
-            <li>Thoughtful look at regret and purpose</li>
-            <li>Accessible, moving prose</li>
-            <li>Strong emotional and philosophical themes</li>
-          </ul>
-        </section>
-
-        <blockquote class="sidebar-card quote">
-          “Between life and death, there is a library, and within that library, the shelves
-          bend like dreams.”
-        </blockquote>
-      </aside>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Page Turner</p>
-      </div>
-    </footer>
-  </body>
+    <footer class="site-footer">Kids read For Fun</footer>
+  </div>
+</body>
 </html>
