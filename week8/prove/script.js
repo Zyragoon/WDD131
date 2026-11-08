@@ -1,9 +1,9 @@
 const character = {
   name: "Typhlosion",
   class: "Volcano Pokemon",
-  level: 1,
+  level: 36,
   health: 170,
-  image: "images/typhlosion.jpg",
+  image: "images/Typhlosion.jpg",
   attacked() {
     this.health = Math.max(0, this.health - 10);
     return this.health === 0;
