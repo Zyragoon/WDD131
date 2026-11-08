@@ -3,7 +3,7 @@ const character = {
   class: "Volcano Pokemon",
   level: 36,
   health: 170,
-  image: "images/Typhlosion.jpg",
+  image: "images/typhlosion.jpg",
   attacked() {
     this.health = Math.max(0, this.health - 10);
     return this.health === 0;
