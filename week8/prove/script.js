@@ -24,7 +24,7 @@ const levelUpButton = document.querySelector("#level-up-button");
 
 function renderCharacter() {
   nameElement.textContent = character.name;
-  imageElement.src = character.image;
+  imageElement.src = "images/typhlosion.jpg";
   imageElement.alt = `${character.name}, art by GIDORA`;
   classElement.textContent = character.class;
   levelElement.textContent = character.level;
