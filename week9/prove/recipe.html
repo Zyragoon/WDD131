@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <header class="site-header">
+        <img class="site-logo" src="images/recipe-book.png" alt="">
+        <h1>RecipeBook</h1>
+    </header>
+
+    <main>
+        <form class="search" role="search">
+            <label class="visually-hidden" for="recipe-search">Find a recipe</label>
+            <input id="recipe-search" type="search" placeholder="Find a recipe">
+            <button type="submit" aria-label="Search recipes">
+                <img src="images/search.svg" alt="">
+            </button>
+        </form>
+
+        <article class="recipe">
+            <img class="recipe-image" src="images/apple-crisp.jpg" alt="Apple crisp topped with vanilla ice cream">
+            <div class="recipe-details">
+                <span class="recipe-category">dessert</span>
+                <h2>Apple Crisp</h2>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true">⭐</span>
+                    <span aria-hidden="true">⭐</span>
+                    <span aria-hidden="true">⭐</span>
+                    <span aria-hidden="true">⭐</span>
+                    <span class="empty-star" aria-hidden="true">☆</span>
+                </span>
+                <p class="recipe-description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <a class="attribution" href="https://www.flaticon.com/free-icons/recipe">Recipe icons created by Freepik - Flaticon</a>
+        <nav class="social" aria-label="Social media">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+                <img src="images/instagram_icon.svg" alt="">
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+                <img src="images/youtube_icon.svg" alt="">
+            </a>
+            <a href="https://www.pinterest.com/" aria-label="Pinterest">
+                <img src="images/pinterest_icon.svg" alt="">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
